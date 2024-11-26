@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        body{
+          /*  background-color: lightpink; */
+          /*background-image: url('hi.jpg');
+          background-repeat: no-repeat;
+          background-position: center;
+          background-size: cover;
+          background-attachment: scroll;*/
+         /* background: linear-gradient(to left,pink,coral);*/
+         /*background: radial-gradient(circle,yellow 5%,pink 10%, gold 20%);*/
+        } 
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            animation-name: jiya;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+        }
+        @keyframes jiya{
+            25% {background-color: hotpink;}
+             50% {background-color: lightcoral;}
+              75% {background-color: lavender;}
+               100% {background-color: lightpink;}
+             
+        }
+    </style>
+</head>
+<body>
+    <h1>Background Animation and Properties</h1>
+    <div>Hello</div>
+</body>
+</html>
