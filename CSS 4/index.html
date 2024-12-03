@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADVANCED SELECTORS</title>
+
+    <style>
+        input[type="password"] {
+             background-color: lightpink;}
+
+        input[type="email"] {background-color: rgb(108, 108, 230);}
+
+        ul>li {
+            color: hotpink;}
+
+        h1+p {
+            background-color: lightblue;}
+
+            ol>li{ color:rgb(195, 71, 47);}
+
+        a:hover{color:green;}
+
+        li:nth-child(2){background-color: darkred;} 
+
+        div:not(.ho){color: mediumaquamarine;}
+
+        .jk::before{content:"💕😒";}
+        .ok::after{content:"😊❤️";}
+        h1::first-letter{font-size: 200px;
+        color: orange;}
+          </style>
+</head>
+
+<body>
+    <h1>ADVANCED SELECTORS</h1>
+    <ol>
+        <li> Attribute</li>
+        Email:<input type="email">
+        Password:<input type="password">
+        <hr>
+        <li> Child Selector</li>
+        <ul>
+            <li> Apple</li>
+            <li> Banana</li>
+            <li> Grapes</li>
+        </ul>
+        <hr>
+        <li> Sibling Selector</li>
+        <h1> SIBLINGS</h1>
+        <p> Adi and Sayuri</p>
+        <hr>
+
+        <h1>PSEUDO CLASSES</h1>
+        <ol>
+            <li>Hover</li>
+            <a href="#">Testing</a>
+            <li>Nth Child</li>
+            <li><h1>Not selector</h1></li>
+            <div class="hi">Hello 1</div>
+            <div class="ho">Hello 2</div>
+        </ol>
+
+
+    </ol>
+    <hr>
+    <h1> PSEUDO ELEMENTS</h1>
+    <h1 class="jk">Hello</h1>
+    <h1 class="ok">Bye</h1>
+
+</body>
+
+</html>
