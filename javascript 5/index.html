@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="cool"></p>
+    <p id="hi"></p>
+    <p id="yo"></p>
+    <script>
+        /*array decelaration*/
+        var flowers=['rose','tulip','dandelion','sunflower'];
+         document.getElementById('cool').innerHTML=flowers[2];
+    
+         /*array methods-join and pop*/
+         document.getElementById('hi').innerHTML=flowers.join(' @ ');
+          flowers.pop();
+         document.getElementById('yo').innerHTML=flowers;
+
+          </script>
+</body>
+</html>
