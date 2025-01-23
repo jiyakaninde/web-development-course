@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFFFFFFFFFFFFFFF</title>
+</head>
+<body>
+    <h1>IF, ELSE IF, ELSE</h1>
+    <button onclick="yay()">PRESS PRESS PLEASE</button>
+    <p id="hour"></p>
+    <p id="greet"></p>
+
+    <script>
+        function yay(){
+            var greeting;
+            var time= new Date().getHours();
+           if(time<10){
+            greeting="Good Morning! RISE AND SHINEEE";
+           }
+           else if(time<20){
+            greeting="G'day mate";
+           }
+           else{
+            greeting="Go to sleep sleepyhead";
+           }
+           document.getElementById('hour').innerHTML="The current hour is: " + time;
+           document.getElementById('greet').innerHTML=greeting;
+        }
+
+    </script>
+</body>
+</html>
