@@ -4,13 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            background-color: pink;
+            color:white;
+            text-transform: uppercase;
+            border-color: crimson;
+        }
+        *{
+            background-color: darkorchid;
+        }
+    </style>
 </head>
 <body>
-    <button onclick="mul()">CLICK CLICK</button>
-    <p id="weee"></p>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><center>
+ <button onclick="mul()">CLICK CLICK</button>
+    <p id="weee"></p></center>
     <script>
         function mul(){
-        var num= 25;
+        var num=1* prompt("Enter number to find its square",0);
         document.getElementById("weee").innerHTML=num*num
         }
     </script>
