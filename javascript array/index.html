@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>ARRAYS</h1>
+    <p id="p1">0</p>
+    <button onclick="as()">CLICK FOR ASCENDING</button><br>
+    <p id="p2">0</p>
+    <button onclick="ds()">CLICK FOR DESCENDING</button>
+    <p id="p3">0</p>
+
+    <script>
+        var arr=[24,5,82,65,59,3,4,8];
+        document.getElementById("p1").innerHTML=arr;
+        function as(){
+            arr.sort(function(a,b){return(a-b);});
+            document.getElementById("p2").innerHTML=arr;
+        }
+          function ds() {
+                arr.sort(function (a, b) { return (b - a); });
+                document.getElementById("p3").innerHTML = arr;
+            }
+    </script>
+</body>
+</html>
