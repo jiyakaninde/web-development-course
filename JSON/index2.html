@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>PROMISES</h1>
+    <p id="result"></p>
+
+    <script>
+        async function add(a,b){
+            let response = await a+b;
+            display(response);
+         }
+         function display(yo){
+            document.getElementById("result").innerHTML= yo;
+         }
+         add(50,30);
+    </script>
+</body>
+</html>
