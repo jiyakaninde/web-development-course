@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input id='one' type="number" min="5" max="10">
+    <button onclick="myFuntion()">CLICK</button>
+    <p id="res">0</p>
+
+    <script>
+        function myFuntion(){
+            var n= document.getElementById("one");
+            if(!n.checkValidity()){
+                document.getElementById("res").innerHTML= n.validationmessage;
+            }
+            else{
+                document.getElementById("res").innerHTML="Input valid";
+            }
+        }
+    </script>
+</body>
+</html>
