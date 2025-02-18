@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-   
-    <style>
-        /* Global Properties */
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" />
+
+    <!-- Font Awesome -->
+
+    <script src="https://kit.fontawesome.com/996973c893.js"></script>
+
+    <!-- Google Fonts -->
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@400;500;600;700;800&family=Roboto+Slab:wght@200;400;600;900&display=swap"
+        rel="stylesheet" />
+
+    <title>Portfolio</title>
+
+    <style>/* Global Properties */
 
 html {
 
@@ -21,9 +32,9 @@ scroll-behavior: smooth;
 
 }
 
-body {
+div {
 
-background: #252525;
+background: #aaa9a9;
 
 font-family: "Baloo Tamma 2", cursive;
 
@@ -54,26 +65,88 @@ border-bottom: 2px solid #f5ba09;
 transition: 0.5s ease;
 
 }
-    </style>
+img{
+width: 550px;
+height: 700px;
+
+}</style>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
+
 <body>
+
     <div class="container navigation pt-3">
+
         <div class="row">
-            <div class="col-4 d-flex justify-content-start align-items-center">
+
+            <div class="col-6 d-flex justify-content-start align-items-center">
+
                 <i class="fa fa-code" aria-hidden="true pb-3"></i>
-                <h2 class="d-inline pl-2 text-danger">CODINGAL</h2>
-            <div class="col-8 pt-2">
-                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
-                <div class="col-3"><a href="#about" class="text-success navigation-link">ABOUT</a></div>
-                <div class="col-3"><a href="#projects" class="text-success navigation-link">PROJECTS</a></div>
-                <div class="col-3"><a href="#lessons" class="text-success navigation-link" >LESSONS</a></div>
-                <div class="col-3"><a href="#resume" class="text-success navigation-link">RESUME</a></div>
-               </div>
+
+                <h5 class="d-inline pl-2 text-white">CODINGAL</h5>
+
             </div>
+
+            <div class="col-6 pt-2">
+
+                <div class="row text-center p-0 d-flex justify-content-end align-items-center">
+
+                    <div class="col-3">
+
+                        <a href="#about" class="text-white navigation-link">About</a>
+
+                    </div>
+
+                    <div class="col-3">
+
+                        <a href="#projects" class="text-white navigation-link">Projects</a>
+
+                    </div>
+
+                    <div class="col-3">
+
+                        <a href="#social-media" class="text-white navigation-link">Social Media</a>
+
+                    </div>
+
+                    <div class="col-3">
+
+                        <a href="" target="_blank" class="text-white navigation-link">Resume</a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
+        </div><br><br>
+        <!--about section-->
+        <div class="container pt-3 pb-3">
+        <div class="row">
+            <div class="col-6 ">
+                <img src="image.avif">
+            </div>
+            <div class="col-6">
+                <h1>Codingal</h1>
+                <h3>A little bit more about me.</h3>
+                <p>Codingal (www.codingal.com) is a leading online after-school where kids & teens learn coding from expert instructors
+                through live, interactive classes. Our mission is to build the world’s largest & most loved programming school for kids
+                & teens, powered by human & AI tutors.</p>
+                <p>Many countries have great technical universities but literally zero programming education at the K-12 level. Parents
+                want their kids to get started with programming earlier, and that's why they use Codingal.</p>
+                <p>All our instructors come from Computer Science background, and they are rigorously vetted and trained. Every student
+                gets a personalized learning path and individual attention in 1:1 private classes or small group classes with expert
+                instructors. Students learn by building apps, games, animations, and websites in a fun & engaging way.</p>
+                <button style="color: black;" class="px-3">Learn More</button>
+            </div>
         </div>
     </div>
 
+    <script src="script.js"></script>
+
 </body>
+
 </html>
