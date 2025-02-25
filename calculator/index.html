@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+
+    <style>
+        body{
+            font-family: 'Open Sans',sans-serif;
+            background-color: black;
+        }
+        #container{
+            width:1000px;
+            height:550px;
+            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("download.jpeg");
+            margin: 20px auto;
+        }
+        #calculator{
+            width:320px;
+            height:520px;
+            background-color: palevioletred;
+            margin: 0 auto;
+            top: 20px;
+            position:relative;
+            border-radius:5px;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+        }
+        #result{
+            height:120px;
+        }
+    </style>
+</head>
+<body>
+   <div id="container">
+    <div id="calcuator">
+        <div id="result">
+            <div id="history">
+                <p id="history-value"></p>
+            </div>
+            <div id="output">
+                <p id="output-value"></p>
+            </div>
+        </div>
+        <div id="keyboard">
+            <button class="operator" id="clear">C</button>
+            <button class="operator" id="backspace">CE</button>
+            <button class="operator" id="%">%</button>
+            <button class="operator" id="*">&times;</button>
+            <button class="number" id="nine">9</button>
+            <button class="number" id="eight">8</button>
+            <button class="number" id="seven">7</button>
+            <button class="operator" id="/">&#247;</button>
+            <button class="number" id="six">6</button>
+            <button class="number" id="five">5</button>
+            <button class="number" id="four">4</button>
+            <button class="operator" id="+">+</button>
+            <button class="number" id="three">3</button>
+            <button class="number" id="two">2</button>
+            <button class="number" id="one">1</button>
+            <button class="operator" id="-">-</button>
+            <button class="number" id="empty"></button>
+            <button class="number" id="zero">0</button>
+            <button class="number" id="empty"></button>
+
+        </div>
+    </div>
+   </div> 
+</body>
+</html>
