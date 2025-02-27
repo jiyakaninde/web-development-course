@@ -8,32 +8,91 @@
     <style>
         body{
             font-family: 'Open Sans',sans-serif;
-            background-color: black;
+            background-color: plum;
         }
         #container{
             width:1000px;
             height:550px;
-            background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url("download.jpeg");
+            background-image: linear-gradient(rgba(249, 110, 209, 0.936),rgba(228, 143, 237, 0.944)),url("download.jpeg");
             margin: 20px auto;
         }
         #calculator{
             width:320px;
             height:520px;
-            background-color: palevioletred;
+            background-color:rgb(254, 212, 243);
             margin: 0 auto;
             top: 20px;
             position:relative;
             border-radius:5px;
-            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+            box-shadow: 0 4px 8px 0 rgba(255, 252, 91, 0.948), 0 6px 20px 0 rgba(250, 94, 128, 0.91);
         }
         #result{
             height:120px;
         }
+        #keyboard{
+            height: 400px;
+        }
+        .operator, .number, .empty{
+            width: 50px;
+            height: 50px;
+            margin: 15px;
+            float: left;
+            border-radius: 50%;
+            border-width: 0;
+            font-weight: bold;
+            font-size: 15px;
+        }
+        .number, .empty{
+            background-color: hotpink;
+        }
+        .number, .operator{
+            cursor: pointer;
+        }
+        .operator:active, .number:active{
+            font-size: 13px;
+        }
+        .operator:focus, .number:focus, .empty:focus{
+            outline:0;
+        }
+        #history{
+        text-align:right;
+        height:20px;
+        margin:0 20px;
+        padding-top:20px;
+        font-size: 15px;
+        color:deeppink;
+        }
+        #output{
+            text-align:right;
+            height:60px;
+            margin: 10px 20px;
+            font-size: 30px;
+        }
+        button:nth-child(4){
+            font-size:20px;
+            background-color:lightpink;
+        }
+         button:nth-child(8){
+            font-size:20px;
+            background-color:lightpink;
+        } button:nth-child(12){
+            font-size:20px;
+            background-color:lightpink;
+        }
+         button:nth-child(16){
+            font-size:20px;
+            background-color:lightpink;
+        } button:nth-child(20){
+            font-size:20px;
+            background-color:lightpink;
+        }
+        
+
     </style>
 </head>
 <body>
    <div id="container">
-    <div id="calcuator">
+    <div id="calculator">
         <div id="result">
             <div id="history">
                 <p id="history-value"></p>
@@ -62,6 +121,7 @@
             <button class="number" id="empty"></button>
             <button class="number" id="zero">0</button>
             <button class="number" id="empty"></button>
+            <button class="operator" id="=">=</button>
 
         </div>
     </div>
